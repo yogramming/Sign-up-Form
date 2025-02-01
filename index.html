@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="side-hero">
+            <div>
+                <img src="images/odin-lined.png">
+                <h1>Sign-up Form</h1>
+            </div>
+            <p>Photo by Kelly Sikkema on Unsplash</p>
+        </div>
+
+        <div class="form-section">
+            <div class="header">
+                <p>Become our new member by signing up <em>now</em> and let your dream come true.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <div>
+                <div class="input-section">
+                    <p>Let's do this!</p>
+                    <form id="my-form">
+                        <label for="firstname">First Name
+                            <input type="text" id="firstname" name="firstname" required>
+                        </label>
+                        <label for="lastname">Last Name
+                            <input type="text" id="lastname" name="lastname" required>
+                        </label>
+                        <label for="email">Email
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                        </label>
+                        <label for="phonenumber">Phone Number
+                            <input type="tel" id="phonenumber" name="phonenumber" required>
+                        </label>
+                        <label for="password">Password
+                            <input type="password" id="password" name="password" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                        </label>
+                        <label for="passwordC">Confirm Password
+                            <input type="password" id="passwordC" name="passwordC" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="submit-section">
+                <div>
+                    <button type="submit" form="my-form">Create Account</button>
+                    <p>Already have an account? <a href="#">Log-in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
